@@ -46,15 +46,15 @@
   src: url(../public/fonts/Gilroy-Regular.ttf);
 }
 .gilroy {
-  font-family: Gilroy;
+  font-family: 'Gilroy';
 }
-
+/* 
 @font-face {
   font-family: Gilroy;
   src: url(../public/fonts/Gilroy-Bold.ttf);
 }
 .gilroy-bold {
-  font-family: Gilroy;
+  font-family: 'GilroyBold';
 }
 
 @font-face {
@@ -62,7 +62,7 @@
   src: url(../public/fonts/Gilroy-SemiBold.ttf);
 }
 .gilroy-semibold {
-  font-family: Gilroy;
+  font-family: 'GilroySemiBold';
 }
 
 @font-face {
@@ -70,5 +70,5 @@
   src: url(../public/fonts/Gilroy-Medium.ttf);
 }
 .gilroy-medium {
-  font-family: Gilroy;
-}
+  font-family: 'GilroyMedium';
+} */
