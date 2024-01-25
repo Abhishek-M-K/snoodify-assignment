@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./Layout";
 import AnonymousScreen from "./views/anonymousScreen";
+import HomeScreen from "./views/HomeScreen";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div> */}
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route index element={<HomeScreen />} />
           <Route path="/anonymous" element={<AnonymousScreen />} />
         </Route>
       </Routes>
