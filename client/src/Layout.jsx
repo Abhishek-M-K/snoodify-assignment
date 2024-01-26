@@ -4,8 +4,8 @@ import Header from "./components/header";
 
 export default function Layout() {
   return (
-    <div className="flex flex-col w-[390px] h-[844px]">
-      <Header />
+    <div className="flex flex-1 w-[390px] h-[844px]">
+      {/* <Header /> */}
       <Outlet />
       <Navigation />
     </div>

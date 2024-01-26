@@ -7,15 +7,15 @@ import Category from "../components/CategoryCard";
 export default function HomeScreen() {
   return (
     <>
-      <div className="w-[390px] h-[844px] sticky">
+      <div className="w-[390px] h-[844px] sticky top-0">
         <div className="relative w-[170px] h-[40px] ml-[16px] flex items-center justify-between">
           <img
-            className="absolute top-[54px] left-[16px] w-[40px] h-[40px] rounded-full"
+            className="absolute top-[54px] w-[40px] h-[40px] rounded-full"
             src="/images/profile-pic.png"
             alt="profile"
           />
 
-          <div className=" w-[118px] h-[40px]  gap-x-[12px]">
+          <div className=" w-[118px] h-[40px] ml-[12px]">
             <span className="absolute top-[58px] left-[68px] text-base gilroy font-bold">
               Snoodify
             </span>
