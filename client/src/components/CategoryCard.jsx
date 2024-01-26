@@ -14,11 +14,20 @@ export default function Category() {
 
       <div>
         <div className="w-[358px] h-[125px] space-x-[18px] flex">
-          <CategoryDisplay imgSrc="/tshirts.png" name="Crew Nech Tshirts" />
-          <CategoryDisplay imgSrc="/tshirt2.png" name="Over Sized Tshirts" />
-          <CategoryDisplay imgSrc="/tshirts3.png" name="Cotton Hydra Tshirts" />
           <CategoryDisplay
-            imgSrc="/hoodies.png"
+            imgSrc="/images/tshirts.png"
+            name="Crew Nech Tshirts"
+          />
+          <CategoryDisplay
+            imgSrc="/images/tshirt2.png"
+            name="Over Sized Tshirts"
+          />
+          <CategoryDisplay
+            imgSrc="/images/tshirts3.png"
+            name="Cotton Hydra Tshirts"
+          />
+          <CategoryDisplay
+            imgSrc="/images/hoodies.png"
             name="Men Hoodies & Sweatshirts"
           />
         </div>
@@ -27,16 +36,16 @@ export default function Category() {
 
         <div className="w-[358px] h-[103px] space-x-[18px] flex">
           <CategoryDisplay
-            imgSrc="/women-oversize.png"
+            imgSrc="/images/women-oversize.png"
             name="womens oversize tshirt"
           />
           <CategoryDisplay
-            imgSrc="/women-graphic.png"
+            imgSrc="/images/women-graphic.png"
             name="Boyfriend Tshirts"
           />
-          <CategoryDisplay imgSrc="/crop-top.png" name="Crop Tops" />
+          <CategoryDisplay imgSrc="/images/crop-top.png" name="Crop Tops" />
           <CategoryDisplay
-            imgSrc="/women-hoodie.png"
+            imgSrc="/images/women-hoodie.png"
             name="Women Hoodies & Sweatshirts"
           />
         </div>
