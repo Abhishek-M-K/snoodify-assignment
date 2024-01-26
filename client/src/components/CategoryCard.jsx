@@ -1,4 +1,4 @@
-import CategoryDisplay from "./categoryDisplay";
+import CategoryDisplay from "./CategoryDisplay";
 
 export default function Category() {
   return (
@@ -14,20 +14,11 @@ export default function Category() {
 
       <div>
         <div className="w-[358px] h-[125px] space-x-[18px] flex">
+          <CategoryDisplay imgSrc="/tshirts.png" name="Crew Nech Tshirts" />
+          <CategoryDisplay imgSrc="/tshirt2.png" name="Over Sized Tshirts" />
+          <CategoryDisplay imgSrc="/tshirts3.png" name="Cotton Hydra Tshirts" />
           <CategoryDisplay
-            imgSrc="/public/tshirts.png"
-            name="Crew Nech Tshirts"
-          />
-          <CategoryDisplay
-            imgSrc="/public/tshirt2.png"
-            name="Over Sized Tshirts"
-          />
-          <CategoryDisplay
-            imgSrc="/public/tshirts3.png"
-            name="Cotton Hydra Tshirts"
-          />
-          <CategoryDisplay
-            imgSrc="/public/hoodies.png"
+            imgSrc="/hoodies.png"
             name="Men Hoodies & Sweatshirts"
           />
         </div>
@@ -36,16 +27,16 @@ export default function Category() {
 
         <div className="w-[358px] h-[103px] space-x-[18px] flex">
           <CategoryDisplay
-            imgSrc="/public/women-oversize.png"
+            imgSrc="/women-oversize.png"
             name="womens oversize tshirt"
           />
           <CategoryDisplay
-            imgSrc="/public/women-graphic.png"
+            imgSrc="/women-graphic.png"
             name="Boyfriend Tshirts"
           />
-          <CategoryDisplay imgSrc="/public/crop-top.png" name="Crop Tops" />
+          <CategoryDisplay imgSrc="/crop-top.png" name="Crop Tops" />
           <CategoryDisplay
-            imgSrc="/public/women-hoodie.png"
+            imgSrc="/women-hoodie.png"
             name="Women Hoodies & Sweatshirts"
           />
         </div>
