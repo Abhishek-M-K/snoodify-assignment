@@ -2,7 +2,7 @@ export default function Navigation() {
   return (
     <>
       <div
-        className="w-[390px] h-[56px] bg-[#29292C] text-[#797979]
+        className="w-[390px] h-[57px] bottom-0 fixed bg-[#FFF] text-[#782DB2]
                 flex items-center justify-between"
         style={
           ({ boxShadow: "0px -5px 13px 0px rgba(0, 0, 0, 0.10)" },
@@ -14,6 +14,7 @@ export default function Navigation() {
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="22"
+          className="absolute top-[17px] left-[42px]"
           viewBox="0 0 23 24"
           fill="none"
         >
@@ -31,6 +32,7 @@ export default function Navigation() {
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
+          className="absolute top-[17px] left-[112px]"
           viewBox="0 0 24 24"
           fill="none"
         >
@@ -51,7 +53,7 @@ export default function Navigation() {
 
         {/* add */}
 
-        <div className="w-[24px] h-[24px] border-[1.5px] border-solid border-[#797979] rounded flex items-center justify-center text-[#782DB2]">
+        <div className="absolute top-[17px] left-[184px] w-[24px] h-[24px] border-[1.5px] border-solid border-[#797979] rounded flex items-center justify-center text-[#782DB2]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="10"
@@ -72,6 +74,7 @@ export default function Navigation() {
           xmlns="http://www.w3.org/2000/svg"
           width="22"
           height="22"
+          className="absolute top-[17px] left-[256px]"
           viewBox="0 0 22 22"
           fill="none"
         >
@@ -97,7 +100,7 @@ export default function Navigation() {
               strokeWidth="0.5"
             />
 
-            <div className="w-[4px] h-[7px] font-normal flex items-center text-[#E1E1E1]">
+            <div className="absolute w-[4px] h-[7px] font-normal flex items-center text-[#E1E1E1]">
               5
             </div>
           </svg>
@@ -108,6 +111,7 @@ export default function Navigation() {
           xmlns="http://www.w3.org/2000/svg"
           width="22"
           height="22"
+          className="absolute top-[17px] left-[326px]"
           viewBox="0 0 22 22"
           fill="none"
         >
