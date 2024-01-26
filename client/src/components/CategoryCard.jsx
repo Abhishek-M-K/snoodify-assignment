@@ -1,6 +1,6 @@
-import CategoryDisplay from "./CategoryDisplay";
+import CategoryDisplay from "./CategoryDisplay.jsx";
 
-export default function Category() {
+export default function CategoryCard() {
   return (
     <>
       <div className="w-[358px] flex justify-between">

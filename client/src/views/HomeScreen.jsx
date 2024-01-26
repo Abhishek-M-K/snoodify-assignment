@@ -2,7 +2,7 @@ import BestDeals from "../components/BestDeals";
 import HotDeals from "../components/HotDeals";
 import PopularCategory from "../components/PopularCategory";
 import ReelVideo from "../components/ReelVideo";
-import Category from "../components/CategoryCard";
+import CategoryCard from "../components/CategoryCard";
 
 export default function HomeScreen() {
   return (
@@ -84,7 +84,7 @@ export default function HomeScreen() {
 
         {/* categories starts */}
         <div className="ml-[16px]">
-          <Category />
+          <CategoryCard />
         </div>
         {/* categories ends */}
         <div className="h-[24px]" />

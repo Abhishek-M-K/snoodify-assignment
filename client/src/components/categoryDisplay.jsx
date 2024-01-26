@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CategoryDisplay({ imgSrc, name }) {
   return (
     <div className="text-center">
@@ -17,5 +15,3 @@ export default function CategoryDisplay({ imgSrc, name }) {
     </div>
   );
 }
-
-// export default categoryDisplay;
