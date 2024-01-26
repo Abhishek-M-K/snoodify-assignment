@@ -1,32 +1,40 @@
-import Category from "../components/category";
+import BestDeals from "../components/BestDeals";
+import HotDeals from "../components/HotDeals";
+import PopularCategory from "../components/PopularCategory";
+import ReelVideo from "../components/ReelVideo";
+import Category from "../components/CategoryCard";
 
 export default function HomeScreen() {
   return (
     <>
-      <div className="w-[390px] h-[844px]">
-        {/* <div className="w-[170px] h-[40px] ml-[16px] gap-x-[12px] flex justify-between">
+      <div className="w-[390px] h-[844px] sticky">
+        <div className="relative w-[170px] h-[40px] ml-[16px] flex items-center justify-between">
           <img
-            className="w-[40px] h-[40px] mt-[12px] "
+            className="absolute top-[54px] left-[16px] w-[40px] h-[40px] rounded-full"
             src="/public/profile-pic.png"
             alt="profile"
           />
 
-          <div className="w-[118px] h-[40px]  items-center mt-[16px] gap-x-[12px]">
-            <span
-              className="font-normal text-base gilroy-bold"
-              style={{ fontFamily: "Gilroy" }}
-            >
+          <div className=" w-[118px] h-[40px]  gap-x-[12px]">
+            <span className="absolute top-[58px] left-[68px] text-base gilroy font-bold">
               Snoodify
             </span>
-            <span className="flex font-normal text-xs text-[#9F9F9F]">
+            <p className="absolute top-[76px] left-[68px] w-full h-[18px] mt-[6px] gilroy font-normal text-xs text-[#9F9F9F]">
               Shop with your friends
-            </span>
+            </p>
           </div>
-        </div> */}
+
+          <div className="absolute top-[64px] left-[248px] w-[100px] h-[20px] gap-x-[20px] flex">
+            <img className="w-[20px] h-[20px]" src="/Notification.png" alt="" />
+            <img src="/Heart-outlined.png" alt="" />
+            <img src="/message.png" alt="" />
+          </div>
+        </div>
+        <div className="h-[12px]" />
 
         {/* search-bar starts */}
         <div
-          className="w-[358px] h-[45px] mt-[106px] ml-[16px] flex items-center justify-between border-[1px] border-solid border-[#000000/10] rounded-[20px]"
+          className="w-[358px] h-[45px] mt-[54px] ml-[16px] flex items-center justify-between border-[1px] border-solid border-[#000000/10] rounded-[20px]"
           style={{ boxShadow: "0px 4px 8px -2px rgba(0, 0, 0, 0.10)" }}
         >
           <div className=" w-[178px] h-[21px] flex items-center ml-[16px] gap-[12px]">
@@ -75,6 +83,161 @@ export default function HomeScreen() {
           <Category />
         </div>
         {/* categories ends */}
+        <div className="h-[24px]" />
+
+        {/* reels section starts */}
+        <div className="flex flex-col">
+          <div className="w-[373px] h-[325px] ml-[16px]">
+            <p className="w-[109px] h-[20px] gilroy font-bold text-base text-[#212121]">
+              Trending Reels
+            </p>
+            <div className="h-[8px]" />
+
+            <div className="w-[492px] h-[319px] flex space-x-[2px] ">
+              <ReelVideo
+                thumbnail="/jeevan.png"
+                profilePic="/jeevan1-pic.png"
+                username="Jeevan_"
+                views="12.5k"
+              />
+
+              <ReelVideo
+                thumbnail="/chitra.png"
+                profilePic="/chitra-pic.png"
+                username="Chitra"
+                views="72.9k"
+              />
+
+              <ReelVideo
+                thumbnail="/unknown.png"
+                profilePic="/jeevan2-pic.png"
+                username="Jeevan_"
+                views="12.5k"
+              />
+            </div>
+          </div>
+          {/* reels section ends */}
+
+          {/* popular categories starts */}
+          <div className="w-[358px] h-[191px] ml-[16px]">
+            <p className="gilroy w-[145px] h-[21px] font-bold text-base">
+              Popular Categories
+            </p>
+            <div className="h-[10px]" />
+
+            <div className="w-[548px] h-[160px] flex space-x-[4px]">
+              <PopularCategory
+                imgSrc="/winter-essentials.png"
+                title="Winter Essentials"
+              />
+              <PopularCategory imgSrc="/gaming.png" title="Gaming Essential" />
+              <PopularCategory
+                imgSrc="/winter-essentials.png"
+                title="Winter Essentials"
+              />
+            </div>
+          </div>
+          {/* popular categories ends */}
+          <div className="h-[20px]" />
+
+          {/* hot deals starts */}
+          <div className="w-[503px] h-[281px] ml-[16px] ">
+            <p className="w-[73px] h-[21px] gilroy font-bold text-base text-[#1F2937]">
+              Hot Deals
+            </p>
+            <div className="h-[10px]" />
+
+            <div className="w-full h-[250px] flex space-x-[4px]">
+              <HotDeals
+                imgSrc="/tan-jacket.png"
+                title="Winter Tan Jacket double.."
+                likeSrc="/Heart.png"
+                currentPrice="1,377"
+                previousPrice="1999"
+                discount="40%off"
+              />
+              <HotDeals
+                imgSrc="/red-leather-jacket.png"
+                title="D&N Leather Red Jacket.."
+                likeSrc="/Heart-outlined.png"
+                currentPrice="1,377"
+                previousPrice="1999"
+                discount="40%off"
+              />
+              <HotDeals
+                imgSrc="/tan-jacket.png"
+                title="Winter Tan Jacket double.."
+                likeSrc="/Heart.png"
+                currentPrice="1,377"
+                previousPrice="1999"
+                discount="40%off"
+              />
+            </div>
+          </div>
+          {/* hot deals ends */}
+
+          {/* best deals starts */}
+          <div className="w-[576px] h-[596px] ml-[16px] flex flex-col">
+            <div className="h-[11.5px]" />
+            <div className="flex">
+              <div>
+                <p className="w-[74px] h-[32px] mt-[14px] gilroy font-bold text-sm text-[#191C1F]">
+                  Best Deals
+                </p>
+
+                <p className="w-[74px] h-[20px] ml-[13px] mt-[16px] flex items-center justify-center gilroy font-semibold text-xs text-[#929292]">
+                  Deals ends in
+                </p>
+
+                <div className="w-[143px] h-[30px] ml-[17px] mt-[16px] bg-[#782DB2] rounded-md">
+                  <p className="w-[112px] h-[24px] ml-[16px] mt-[3px] flex items-center  justify-center gilroy font-base text-xs text-center text-white">
+                    16d : 21h : 57m : 23s
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="h-[20.5px]" />
+            <div>
+              <BestDeals />
+            </div>
+          </div>
+          {/* best deals ends */}
+          <div className="h-[16px]" />
+
+          {/* banner starts */}
+          <div className="relative w-[358px] h-[336px]  mt-[52px] ml-[32px] flex rounded bg-[#F2F4F5]">
+            <div className="absolute top-[28px] left-[25px] w-[118px] h-[32px] py-[6px] px-[12px] rounded-sm bg-[#782DB2]">
+              <p className="gilroy font-semibold text-xs text-[#FFF] text-center">
+                INTRODUCING
+              </p>
+            </div>
+            <div className="h-[20px]" />
+
+            <p className="absolute top-[80px] left-[25px] w-[166px] h-[57px] gilroy font-bold text-2xl text-[#191C1F]">
+              New Apple Homepod Mini
+            </p>
+            <div className="h-[20px]" />
+
+            <p className="absolute top-[145px] left-[25px] w-[160px] h-[96px] gilroy font-normal text-base text-[#929292]">
+              Jam-packed with innovation, HomePod mini delivers unexpectedly.
+            </p>
+            <div className="h-[17px]" />
+
+            <div className="absolute top-[258px] left-[25px] w-[141px] h-[48px] flex items-center bg-white">
+              <p className="w-[65px] h-[48px] text-center gilroy font-bold text-sm ml-[24px] text-[#181818]">
+                BUY NOW
+              </p>
+
+              <img src="/ArrowRight.png" alt="" />
+            </div>
+            <img
+              className="absolute w-[159px] h-[192px] space-y-[16px] top-[66px] right-0"
+              src="/homepod.png"
+              alt="homepod"
+            />
+          </div>
+        </div>
       </div>
     </>
   );
