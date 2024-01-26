@@ -1,4 +1,4 @@
-import CategoryDisplay from "./CategoryDisplay";
+import CategoryDisplay from "../components/CategoryDisplay";
 
 export default function Category() {
   return (
