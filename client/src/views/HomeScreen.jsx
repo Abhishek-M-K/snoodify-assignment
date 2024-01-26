@@ -11,7 +11,7 @@ export default function HomeScreen() {
         <div className="relative w-[170px] h-[40px] ml-[16px] flex items-center justify-between">
           <img
             className="absolute top-[54px] left-[16px] w-[40px] h-[40px] rounded-full"
-            src="/public/profile-pic.png"
+            src="/images/profile-pic.png"
             alt="profile"
           />
 
@@ -25,9 +25,13 @@ export default function HomeScreen() {
           </div>
 
           <div className="absolute top-[64px] left-[248px] w-[100px] h-[20px] gap-x-[20px] flex">
-            <img className="w-[20px] h-[20px]" src="/Notification.png" alt="" />
-            <img src="/Heart-outlined.png" alt="" />
-            <img src="/message.png" alt="" />
+            <img
+              className="w-[20px] h-[20px]"
+              src="/images/notification.png"
+              alt=""
+            />
+            <img src="/images/heart-outlined.png" alt="" />
+            <img src="/images/message.png" alt="" />
           </div>
         </div>
         <div className="h-[12px]" />
@@ -95,22 +99,22 @@ export default function HomeScreen() {
 
             <div className="w-[492px] h-[319px] flex space-x-[2px] ">
               <ReelVideo
-                thumbnail="/jeevan.png"
-                profilePic="/jeevan1-pic.png"
+                thumbnail="/images/jeevan.png"
+                profilePic="/images/jeevan1-pic.png"
                 username="Jeevan_"
                 views="12.5k"
               />
 
               <ReelVideo
-                thumbnail="/chitra.png"
-                profilePic="/chitra-pic.png"
+                thumbnail="/images/chitra.png"
+                profilePic="/images/chitra-pic.png"
                 username="Chitra"
                 views="72.9k"
               />
 
               <ReelVideo
-                thumbnail="/unknown.png"
-                profilePic="/jeevan2-pic.png"
+                thumbnail="/images/jeevan2.png"
+                profilePic="/images/jeevan2-pic.png"
                 username="Jeevan_"
                 views="12.5k"
               />
@@ -127,12 +131,15 @@ export default function HomeScreen() {
 
             <div className="w-[548px] h-[160px] flex space-x-[4px]">
               <PopularCategory
-                imgSrc="/winter-essentials.png"
+                imgSrc="/images/winter-essentials.png"
                 title="Winter Essentials"
               />
-              <PopularCategory imgSrc="/gaming.png" title="Gaming Essential" />
               <PopularCategory
-                imgSrc="/winter-essentials.png"
+                imgSrc="/images/gaming.png"
+                title="Gaming Essential"
+              />
+              <PopularCategory
+                imgSrc="/images/winter-essentials.png"
                 title="Winter Essentials"
               />
             </div>
@@ -149,25 +156,25 @@ export default function HomeScreen() {
 
             <div className="w-full h-[250px] flex space-x-[4px]">
               <HotDeals
-                imgSrc="/tan-jacket.png"
+                imgSrc="/images/tan-jacket.png"
                 title="Winter Tan Jacket double.."
-                likeSrc="/Heart.png"
+                likeSrc="/images/heart.png"
                 currentPrice="1,377"
                 previousPrice="1999"
                 discount="40%off"
               />
               <HotDeals
-                imgSrc="/red-leather-jacket.png"
+                imgSrc="/images/red-leather-jacket.png"
                 title="D&N Leather Red Jacket.."
-                likeSrc="/Heart-outlined.png"
+                likeSrc="/images/heart-outlined.png"
                 currentPrice="1,377"
                 previousPrice="1999"
                 discount="40%off"
               />
               <HotDeals
-                imgSrc="/tan-jacket.png"
+                imgSrc="/images/tan-jacket.png"
                 title="Winter Tan Jacket double.."
-                likeSrc="/Heart.png"
+                likeSrc="/images/heart.png"
                 currentPrice="1,377"
                 previousPrice="1999"
                 discount="40%off"
@@ -229,11 +236,11 @@ export default function HomeScreen() {
                 BUY NOW
               </p>
 
-              <img src="/ArrowRight.png" alt="" />
+              <img src="/images/arrow-right.png" alt="" />
             </div>
             <img
               className="absolute w-[159px] h-[192px] space-y-[16px] top-[66px] right-0"
-              src="/homepod.png"
+              src="/images/homepod.png"
               alt="homepod"
             />
           </div>
