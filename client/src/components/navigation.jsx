@@ -3,11 +3,8 @@ export default function Navigation() {
     <>
       <div
         className="w-[390px] h-[57px] bottom-0 fixed bg-[#FFF] text-[#782DB2]
-                flex items-center justify-between"
-        style={
-          ({ boxShadow: "0px -5px 13px 0px rgba(0, 0, 0, 0.10)" },
-          { backdropFilter: "blur(36px)" })
-        }
+                flex items-center justify-between  backdrop:blur-[36px]"
+        style={{ boxShadow: "0px -5px 13px 0px rgba(0, 0, 0, 0.10)" }}
       >
         {/* home */}
         <svg

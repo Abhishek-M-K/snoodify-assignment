@@ -298,7 +298,7 @@ export default function HomeScreen() {
           {/* banner ends */}
         </div>
 
-        <div className="h-[14px]" />
+        <div className="h-[70px]" />
       </div>
     </>
   );
