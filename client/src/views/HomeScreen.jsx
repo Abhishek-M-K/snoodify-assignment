@@ -3,12 +3,13 @@ import HotDeals from "../components/HotDeals";
 import PopularCategory from "../components/PopularCategory";
 import ReelVideo from "../components/ReelVideo";
 import CategoryCard from "../components/CategoryCard";
+import Recommendations from "../components/Recommendations";
 
 export default function HomeScreen() {
   return (
     <>
       <div className="w-[390px] h-[844px] sticky top-0">
-        <div className="relative w-[170px] h-[40px] ml-[16px] flex items-center justify-between">
+        <div className="relative w-[170px] h-[40px] -mt-[42px] ml-[16px] flex items-center justify-between">
           <img
             className="absolute top-[54px] w-[40px] h-[40px] rounded-full"
             src="/images/profile-pic.png"
@@ -187,20 +188,18 @@ export default function HomeScreen() {
           <div className="w-[576px] h-[596px] ml-[16px] flex flex-col">
             <div className="h-[11.5px]" />
             <div className="flex">
-              <div>
-                <p className="w-[74px] h-[32px] mt-[14px] gilroy font-bold text-sm text-[#191C1F]">
-                  Best Deals
-                </p>
+              <p className="w-[74px] h-[32px] mt-[14px] gilroy font-bold text-sm text-[#191C1F]">
+                Best Deals
+              </p>
 
-                <p className="w-[74px] h-[20px] ml-[13px] mt-[16px] flex items-center justify-center gilroy font-semibold text-xs text-[#929292]">
-                  Deals ends in
-                </p>
+              <p className="w-[74px] h-[20px] ml-[13px] mt-[16px] flex items-center justify-center gilroy font-semibold text-xs text-[#929292]">
+                Deals ends in
+              </p>
 
-                <div className="w-[143px] h-[30px] ml-[17px] mt-[16px] bg-[#782DB2] rounded-md">
-                  <p className="w-[112px] h-[24px] ml-[16px] mt-[3px] flex items-center  justify-center gilroy font-base text-xs text-center text-white">
-                    16d : 21h : 57m : 23s
-                  </p>
-                </div>
+              <div className="w-[143px] h-[30px] ml-[17px] mt-[16px] bg-[#782DB2] rounded-md">
+                <p className="w-[112px] h-[24px] ml-[16px] mt-[3px] flex items-center  justify-center gilroy font-base text-xs text-center text-white">
+                  16d : 21h : 57m : 23s
+                </p>
               </div>
             </div>
 
@@ -213,7 +212,7 @@ export default function HomeScreen() {
           <div className="h-[16px]" />
 
           {/* banner starts */}
-          <div className="relative w-[358px] h-[336px]  mt-[52px] ml-[32px] flex rounded bg-[#F2F4F5]">
+          <div className="relative w-[358px] h-[336px]   ml-[16px] flex rounded bg-[#F2F4F5]">
             <div className="absolute top-[28px] left-[25px] w-[118px] h-[32px] py-[6px] px-[12px] rounded-sm bg-[#782DB2]">
               <p className="gilroy font-semibold text-xs text-[#FFF] text-center">
                 INTRODUCING
@@ -232,9 +231,11 @@ export default function HomeScreen() {
             <div className="h-[17px]" />
 
             <div className="absolute top-[258px] left-[25px] w-[141px] h-[48px] flex items-center bg-white">
-              <p className="w-[65px] h-[48px] text-center gilroy font-bold text-sm ml-[24px] text-[#181818]">
+              <p className="w-[65px] h-full mt-7 text-center gilroy font-bold text-sm ml-[24px] text-[#181818]">
                 BUY NOW
               </p>
+
+              <div className="w-[8px]" />
 
               <img src="/images/arrow-right.png" alt="" />
             </div>
@@ -244,7 +245,60 @@ export default function HomeScreen() {
               alt="homepod"
             />
           </div>
+          {/* banner ends */}
+          <div className="h-[16px]" />
+
+          {/* recommendation starts */}
+          <div className="w-[358px] h-[1010px] ml-[16px] ">
+            <p className="w-[157px] h-[19px] gilroy font-bold text-sm text-[#2F2F2F]">
+              Recommended for you
+            </p>
+            <div className="h-[12px]" />
+            <Recommendations />
+          </div>
+          {/* recommendation ends */}
+          <div className="h-[18px]" />
+
+          {/* banner starts */}
+          <div className="relative w-[358px] h-[336px] ml-[16px] rounded bg-[#191C1F]">
+            <img
+              className="absolute top-[18px] left-[154px] w-[186px] h-[318px] "
+              src="/images/mobile.png"
+              alt="mobile"
+            />
+
+            <div className="absolute top-[52px] left-[11px] w-[138px] h-[32px] py-[6px] px-[10px] rounded-sm bg-[#EFD33D] ">
+              <p className="bg-transparent font-semibold text-xs text-center text-[#191C1F]">
+                INTRODUCING NEW
+              </p>
+            </div>
+
+            <p className="absolute top-[98px] left-[12px] w-[140px] h-[48px] gilroy font-bold text-base text-white">
+              Xiaomi Mi 11 Ultra 12GB+256GB
+            </p>
+
+            <p className="absolute top-[153px] left-[12px] w-[140px] h-[41px] gilroy font-medium text-[10px] text-[#ADB7BC]">
+              *Data provided by internal laboratories. Industry measurment.
+            </p>
+
+            <div className="absolute top-[236px] left-[22px] w-[105px] h-[36px] rounded-[10px] flex items-center justify-center bg-[#782DB2]">
+              <p className="w-[56px] h-[30px] mt-[15px] text-center gilroy font-bold text-xs ml-[13px] text-white">
+                BUY NOW
+              </p>
+
+              <div className="w-[5px]" />
+
+              <img
+                className="w-[20px] h-[20px] flex items-center"
+                src="/images/white-arrow.png"
+                alt=""
+              />
+            </div>
+          </div>
+          {/* banner ends */}
         </div>
+
+        <div className="h-[14px]" />
       </div>
     </>
   );

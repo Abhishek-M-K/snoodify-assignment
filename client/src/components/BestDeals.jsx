@@ -1,6 +1,6 @@
 export default function BestDeals() {
   return (
-    <div className="w-[576px] h-[523px] ml-[16px] grid grid-cols-2 border border-[#E4E7E9]">
+    <div className="w-[576px] h-[523px] grid grid-cols-2 border border-[#E4E7E9]">
       <div className=" col-span-1 w-[328px] h-[523px]  border border-[#E4E7E9]">
         <div className="relative w-[280px] h-[268px] ">
           <img className="" src="/images/ps5.png" alt="" />
